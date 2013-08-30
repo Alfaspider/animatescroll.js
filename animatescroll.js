@@ -148,7 +148,7 @@
         });
 
         // Scroll the page to the desired position
-        $("html, body").animate({ scrollTop: offset-opts.padding }, opts.scrollSpeed, opts.easing,opts.complete);
+        $("html, body").animate({ scrollTop: offset-opts.padding }, opts.scrollSpeed, opts.easing).promise().done(opts.complete);
         
     };
     
